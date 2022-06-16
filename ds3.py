@@ -12,7 +12,7 @@ class Boss:
         self.hand = hand
         self.puzzle = puzzle
         self.mask = mask
-        # Ozellikleri buraya ekle
+        
 
 
 class Question:
@@ -42,7 +42,7 @@ class Question:
 
 
 
-# Yukarida boss ozelliklerini ayarladiktan sonra, sorulari ve bosslari asagida ayarladiktan sonra soru numarasi ile hangi ozellikleri karsilastiracagini ayarla.
+
 
 
 boss1 = Boss('Iudex Gundyr', 'Kesmeli', 'Büyük', 'Arena', 'Hiçbirine', 'Havalanmak', 'Ağır', 'Yalnız', 'Tek', 'Olmasın', 'İsterdim')
@@ -106,7 +106,7 @@ def compare(ans, qnum):
                 i.point += 1
 
 
-# Burda bosslari yarat ve listeye ekle
+
 
 
 q1 = Question(1, "Ne tür silah kullanmayı tercih ederdin ?", 'Kesmeli', 'Büyülü', 'Ezmeli', 'Hiçbirini')
@@ -121,7 +121,7 @@ q9 = Question(9, "Hangisini seçerdin,zayıf bir noktan olmadan ama biraz daha g
 q10 = Question(10, "Bütün yüzünü maske vb. ile saklamayı ister miydin ?", 'İsterdim', 'İstemezdim', 'Ne yüzü ?', '-')
 
 questionList = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
-# Sorulari yarat ve de listeye ekle
+
 
 for i in questionList:
     compare(i.answer, i.qnum)
